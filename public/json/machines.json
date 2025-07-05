@@ -1,0 +1,147 @@
+[
+    {
+      "id": "1",
+      "name": "Nexus",
+      "status": "Activo",
+      "doorOpen": false,
+      "counters": {
+        "played": 120,
+        "won": 30
+      },
+      "lastSync": "2025-07-05T10:00:00Z",
+      "imgUrl": "img/ambar.png"
+    },
+    {
+      "id": "2",
+      "name": "Ambar",
+      "status": "En mantenimiento",
+      "doorOpen": true,
+      "counters": {
+        "played": 80,
+        "won": 10
+      },
+      "lastSync": "2025-07-05T10:10:00Z",
+      "imgUrl": "img/ambar.png"
+    },
+    {
+      "id": "3",
+      "name": "Allegra",
+      "status": "Error",
+      "doorOpen": false,
+      "counters": {
+        "played": 200,
+        "won": 45
+      },
+      "lastSync": "2025-07-05T09:55:00Z",
+      "imgUrl": "img/allegra.png"
+    },
+    {
+      "id": "4",
+      "name": "Forza",
+      "status": "Fuera de servicio",
+      "doorOpen": true,
+      "counters": {
+        "played": 60,
+        "won": 5
+      },
+      "lastSync": "2025-07-05T08:30:00Z",
+      "imgUrl": "img/forza.png"
+    },
+    {
+      "id": "5",
+      "name": "Pot o gold",
+      "status": "Activo",
+      "doorOpen": false,
+      "counters": {
+        "played": 170,
+        "won": 65
+      },
+      "lastSync": "2025-07-05T10:20:00Z",
+      "imgUrl": "img/pot.png"
+    },
+    {
+      "id": "6",
+      "name": "Nebula",
+      "status": "Activo",
+      "doorOpen": false,
+      "counters": {
+        "played": 90,
+        "won": 22
+      },
+      "lastSync": "2025-07-05T10:15:00Z",
+      "imgUrl": "img/nexus.png"
+    },
+    {
+      "id": "7",
+      "name": "Nova",
+      "status": "En mantenimiento",
+      "doorOpen": true,
+      "counters": {
+        "played": 55,
+        "won": 8
+      },
+      "lastSync": "2025-07-05T09:45:00Z",
+      "imgUrl": "img/nexus.png"
+    },
+    {
+      "id": "8",
+      "name": "Phoenix",
+      "status": "Error",
+      "doorOpen": false,
+      "counters": {
+        "played": 140,
+        "won": 38
+      },
+      "lastSync": "2025-07-05T09:50:00Z",
+      "imgUrl": "img/nexus.png"
+    },
+    {
+      "id": "9",
+      "name": "Astra",
+      "status": "Activo",
+      "doorOpen": false,
+      "counters": {
+        "played": 100,
+        "won": 25
+      },
+      "lastSync": "2025-07-05T10:25:00Z",
+      "imgUrl": "img/nexus.png"
+    },
+    {
+      "id": "10",
+      "name": "Eclipse",
+      "status": "Fuera de servicio",
+      "doorOpen": true,
+      "counters": {
+        "played": 45,
+        "won": 4
+      },
+      "lastSync": "2025-07-05T07:40:00Z",
+      "imgUrl": "img/nexus.png"
+    },
+    {
+      "id": "11",
+      "name": "Zeus",
+      "status": "Activo",
+      "doorOpen": false,
+      "counters": {
+        "played": 210,
+        "won": 77
+      },
+      "lastSync": "2025-07-05T10:30:00Z",
+      "imgUrl": "img/nexus.png"
+    },
+    {
+      "id": "12",
+      "name": "Hermes",
+      "status": "En mantenimiento",
+      "doorOpen": true,
+      "counters": {
+        "played": 65,
+        "won": 13
+      },
+      "lastSync": "2025-07-05T08:10:00Z",
+      "imgUrl": "img/nexus.png"
+    }
+  ]
+  

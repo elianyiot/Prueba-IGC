@@ -1,0 +1,98 @@
+.btn-group.flat-buttons .btn {
+    border-radius: 0 !important;
+  }
+
+  .btn-custom {
+    background-color: #1B163A; 
+    color: #fff;
+    font-size: 14px;
+    border: 1px solid #4A148C;
+  
+    &:hover {
+      background-color: #6A1B9A;
+      border-color: #6A1B9A;
+    }
+  
+    &.active {
+      background-color: #7B1FA2;
+      border-color: #7B1FA2;
+    }
+  }
+.carousel-control-prev {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 13%;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    background: 0 0;
+    filter: var(--bs-carousel-control-icon-filter);
+    border: 0;
+    opacity: .5;
+    transition: opacity .15s ease;
+    left: -9%;
+    margin-bottom: 30px;
+}
+
+.description {
+    font-size: 16px;
+    color: #000000;
+}
+
+.title {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.subTitle {
+    font-size: 22px;
+    opacity: 72%;
+    font-weight: bold;
+    color: #000000;
+}
+
+.carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: -35px;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-right: 15%;
+    margin-bottom: -1rem;
+    margin-left: 15%;
+}
+
+.carousel-control-next {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 13%;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    background: 0 0;
+    filter: var(--bs-carousel-control-icon-filter);
+    border: 0;
+    opacity: .5;
+    transition: opacity .15s ease;
+    left: 96%;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 576px) {
+    .title {
+        font-size: 1.50rem;
+    }
+}

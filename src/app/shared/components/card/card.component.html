@@ -1,0 +1,35 @@
+<div class="card shadow-sm rounded-4  p-3">
+    <div class="row g-0 align-items-center">
+        <div class="col-md-4 p-3 text-center bg-light rounded-3">
+            <img [src]="imagenUrl" class="img-fluid rounded-start" alt="Máquina Nexus" style="max-height: 200px;" />
+        </div>
+        <div class="col-md-8">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center flex-wrap">
+                    <h6 class="card-title mb-0 fw-bold me-2">{{ nombre }}</h6>
+                    <div class="d-flex align-items-center mt-2 mt-md-0">
+                        <i class="icon fas fa-sync me-2"></i>
+                        <small>{{ sincronizacion | date: 'dd/MM/yyyy' }}</small>
+                    </div>
+                </div>
+                <span class="status badge rounded-pill mb-2">{{ estado }}</span>
+
+                <div class="bg-light rounded-3 p-3 d-flex justify-content-between text-center  d-none d-sm-flex">
+                    <div>
+                        <div class="font mb-1">Partidas jugadas</div>
+                        <div class="content">{{ partidas }}</div>
+                    </div>
+                    <div>
+                        <div class="font mb-1">Premios entregados</div>
+                        <div class=" content">{{ premios }}</div>
+                    </div>
+                    <div>
+                        <div class="font mb-1">Estado de compuerta</div>
+                        <span class="status door-bg rounded-pill mb-3">{{ compuerta }}</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,77 @@
+<div class="container">
+    <div class="row p-5">
+        <div class="col-sm-12 col-md-12">
+            <p class="title">Dashboard</p>
+        </div>
+
+        <div class="col-sm-12 col-md-12 mt-5">
+            <p class="subTitle">Hola Elianyi,</p>
+            <p class="description">
+                Visualiza y gestiona el estado de tus máquinas con precisión y control total.
+            </p>
+        </div>
+
+        <div class="container d-flex justify-content-center pt-4 d-none d-sm-flex">
+            <div class="btn-group flat-buttons mb-4" role="group">
+                <button type="button" class="btn btn-custom" [class.active]="estadoSeleccionado === 'Todos'"
+                    (click)="cambiarEstado('Todos')">
+                    <i class="bi-boxes me-2"></i> Todas
+                </button>
+                <button type="button" class="btn btn-custom" [class.active]="estadoSeleccionado === 'Activo'"
+                    (click)="cambiarEstado('Activo')">
+                    <i class="bi-check-circle me-2"></i> Activas
+                </button>
+                <button type="button" class="btn btn-custom" [class.active]="estadoSeleccionado === 'Fuera de servicio'"
+                    (click)="cambiarEstado('Fuera de servicio')">
+                    <i class="bi-x-octagon me-2"></i>
+                    Fuera de servicio
+                </button>
+                <button type="button" class="btn btn-custom" [class.active]="estadoSeleccionado === 'En mantenimiento'"
+                    (click)="cambiarEstado('En mantenimiento')">
+                    <i class="bi-gear me-2"></i> En mantenimiento
+                </button>
+            </div>
+        </div>
+
+        <div class="col-12 mt-3">
+            <div id="machineCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button *ngFor="let chunk of machineChunks; index as i" type="button"
+                        data-bs-target="#machineCarousel" [attr.data-bs-slide-to]="i" [class.active]="i === 0"
+                        [attr.aria-current]="i === 0 ? 'true' : null" [attr.aria-label]="'Slide ' + (i + 1)">
+                    </button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div *ngFor="let chunk of machineChunks; index as i" class="carousel-item" [class.active]="i === 0"
+                        [attr.data-bs-interval]="10000">
+                        <div class="row">
+                            <div class="col-12 col-xl-6 mb-4" *ngFor="let machine of chunk">
+                                <app-card [partidas]="machine.counters.played" [premios]="machine.counters.won"
+                                    [compuerta]="machine.doorOpen ? 'Abierta' : 'Cerrada'" [estado]="machine.status"
+                                    [sincronizacion]="machine.lastSync" [nombre]="machine.name"
+                                    [imagenUrl]="machine.imgUrl">
+                                </app-card>
+                            </div>
+                        </div>
+
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#machineCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#machineCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
